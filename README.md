@@ -17,7 +17,7 @@ Each new Linux server that is spun up in the AWS account will be configured to s
 
 ## Requirements 
 -------------------------------
-- PAS version version 10.7 and up
+- PAS version version 10.7 and up (Vault + PVWA + CPM required)
 - Network environment must contain NAT GW for the Lambda deployment to succeed , We advice to use the CyberArk network template with NAT
 - Network access from the VPC in which the Lambda is deployed  to the PVWA 
 - Network access from the VPC in which the Lambda is deployed to the VPC in which the Linux instance is deployed 
