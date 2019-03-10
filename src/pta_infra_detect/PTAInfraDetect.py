@@ -292,7 +292,7 @@ def detect_instance(instanceId, session, instanceDetails, storeParametersClass, 
         return
     pemkeyfile = save_key_pair(instancePrivateKey)
     instanceUsername = get_OS_distribution_user(instanceDetails['image_description'])
-    time.sleep(30)
+    time.sleep(50)
     change_rsyslog(pemkeyfile, instanceDetails, instanceUsername, storeParametersClass.ptaIP)
 
 
