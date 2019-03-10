@@ -180,8 +180,6 @@ def logoff_pvwa(pvwaUrl, connectionSessionToken):
 
 def call_rest_api_post(url, request, header):
     try:
-        print(url)
-        print(request)
         restResponse = requests.post(url, data=request, timeout=30, verify=False, headers=header)
     except Exception as e:
         print("Error occurred during POST request to PVWA. Exception: {0}".format(e))
