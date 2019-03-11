@@ -492,6 +492,25 @@
                 ]
             }
         },
+        "PTAInfraDetectToCloudWatchPermission": {
+			"Type" : "AWS::Lambda::Permission",
+			"Properties" : {
+				"Action" : "lambda:InvokeFunction",
+				"FunctionName" : {
+					"Fn::GetAtt": [
+						"PTAInfraDetectLambda",
+						"Arn"
+					]
+				},
+				"Principal" : "events.amazonaws.com",
+				"SourceArn" : {
+					"Fn::GetAtt": [
+						"PTACloudWatchInstanceChangeTrigger",
+						"Arn"
+					]
+				}
+			}
+		},
         "PTACloudWatchInstanceChangeTrigger": {
             "Type": "AWS::Events::Rule",
             "Properties": {
@@ -532,7 +551,8 @@
                 ]
             },
             "DependsOn": [
-                "PTACreateSafe"
+                "PTACreateSafe",
+                "PTAInfraDetectLambda"
             ]
         },
         "DynamoDBTableInstances": {
