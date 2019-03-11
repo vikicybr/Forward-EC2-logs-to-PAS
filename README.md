@@ -86,7 +86,7 @@ In AWS console → open EC2 dashboard  in left pane, go to Parameter Store →  
 
 ## Licensing 
 
-Copyright 1999-2018 CyberArk Software Ltd.
+Copyright 1999-2019 CyberArk Software Ltd.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this software except in compliance with the License. You may obtain a copy of the License at
 
