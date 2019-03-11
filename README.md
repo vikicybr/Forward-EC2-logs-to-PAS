@@ -75,6 +75,15 @@ In AWS console → open EC2 dashboard  in left pane, go to Parameter Store →  
 - Logs : In AWS  console → go to Lambda service → Choose your lambda’s name from the list → Press on monitoring → press on “view logs in cloudwatch”
 
 
+## Deleting the Solution 
+
+- Delete the cloud formation stack
+
+- Delete the PTA sessions DynamoDB table that is located under : DynamoDB→ Tables  
+
+- Delete the Solution trigger that is located under : Cloud Watch→ Rules 
+
+
 ## Licensing 
 
 Copyright 1999-2018 CyberArk Software Ltd.
