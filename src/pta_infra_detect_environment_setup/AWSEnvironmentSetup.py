@@ -285,9 +285,9 @@ def delete_password_from_param_store():
 def delete_sessions_table():
     try:
         dynamodb = boto3.resource('dynamodb')
-        sessionsTable = dynamodb.Table('Sessions')
+        sessionsTable = dynamodb.Table('PTASessions')
         sessionsTable.delete()
         return
     except Exception:
-        print("Failed to delete 'Sessions' table from DynamoDB")
+        print("Failed to delete 'PTASessions' table from DynamoDB")
         return
