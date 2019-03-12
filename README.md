@@ -49,7 +49,7 @@ Regarding the KeyPair Safe :
 
 ## Limitations 
 
-- Only both flavors of AWS Linux AMI are supported in this solution 
+- Only Amazon Linux 2 AMI is supported by this solution 
 - Deployment of the lambdas solution must be done per region , only Linux servers spinning up in the same region will be updated by the solution.
 - Only Linux instances that are created with a keypair that is available in the keypair safe will be handled by the solution 
 
