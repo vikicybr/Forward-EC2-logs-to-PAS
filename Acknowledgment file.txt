@@ -1,0 +1,8 @@
+asn1crypto -  https://github.com/wbond/asn1crypto MIT license Copyright (c) 2015-2018 Will Bond <will@wbond.net>
+bcrypt - https://github.com/pyca/bcrypt Apache License 2.0 [link to github]
+cffi - https://github.com/cffi/cffi MIT license Copyright (C) 2005-2007, James Bielman  <jamesjb@jamesjb.com>
+cffi-1.11.5.dist-info -  [add linkhttps://github.com/ccam/pwm/tree/master/venv/lib/python3.5/site-packages/cffi-1.11.5.dist-info ]
+libs_cffi_backend [link]
+cryptography - https://github.com/pyca/cryptography – PSF License; Copyright © 2001-2016 Python Software Foundation
+nacl - https://github.com/krig/nacl measure-anything.c version 20090223 * D. J. Bernstein * Public domain.
+paramiko - https://github.com/paramiko/paramiko GNU Lesser General Public License v2.1Copyright (c) 2003-2009 Robey Pointer <robeypointer@gmail.com> Copyright (c) 2013-2019 Jeff Forcier <jeff@bitprophet.org> [link to full source code of paramiko]
