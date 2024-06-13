@@ -264,7 +264,7 @@
                         "Arn"
                     ]
                 },
-                "Runtime": "python3.6",
+                "Runtime": "python3.12",
                 "Timeout": 10,
                 "VpcConfig" : {"SecurityGroupIds" : [{"Fn::GetAtt": ["TrustMechanismPTASecurityGroup", "GroupId"]}],
 							"SubnetIds" : [{"Ref": "ComponentsSubnet"}]
@@ -278,7 +278,7 @@
                     "S3Bucket": {
                         "Ref": "LambdasBucket"
                     },
-                    "S3Key": "pta_infra_detect_0.1.0.zip"
+                    "S3Key": "pta_infra_detect.zip"
                 },
                 "Description": "Main PTA Infra Detect Lambda",
                 "Handler": "PTAInfraDetect.lambda_handler",
@@ -288,7 +288,7 @@
                         "Arn"
                     ]
                 },
-                "Runtime": "python3.6",
+                "Runtime": "python3.12",
                 "Timeout": 240,
                 "VpcConfig" : {"SecurityGroupIds" : [{"Fn::GetAtt": ["PTAInfraDetectLambdaSecurityGroup", "GroupId"]}],
 							"SubnetIds" : [{"Ref": "ComponentsSubnet"}]
@@ -346,7 +346,7 @@
                     "S3Bucket": {
                         "Ref": "LambdasBucket"
                     },
-                    "S3Key": "pta_infra_detect_environment_setup_0.1.0.zip"
+                    "S3Key": "pta_infra_detect_environment_setup.zip"
                 },
                 "Description": "PTA environment initial setup Lambda",
                 "Handler": "AWSEnvironmentSetup.lambda_handler",
@@ -356,7 +356,7 @@
                         "Arn"
                     ]
                 },
-                "Runtime": "python2.7",
+                "Runtime": "python3.12",
                 "Timeout": 35,
                 "VpcConfig": {
                     "SecurityGroupIds": [
